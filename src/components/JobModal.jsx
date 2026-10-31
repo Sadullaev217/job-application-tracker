@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import NotesTimeline from './NotesTimeline'
 
 const STATUSES = ['applied', 'phone_screen', 'interview', 'offer', 'rejected']
 const STATUS_LABELS = {
@@ -55,6 +56,7 @@ export default function JobModal({ job, onSave, onClose }) {
           <label>Notes
             <textarea value={form.notes} onChange={e => set('notes', e.target.value)} rows={3} />
           </label>
+          {job && <NotesTimeline jobId={job.id} />}
           <div className="modal-actions">
             <button type="button" onClick={onClose}>Cancel</button>
             <button type="submit" disabled={saving}>{saving ? 'Saving…' : 'Save'}</button>
