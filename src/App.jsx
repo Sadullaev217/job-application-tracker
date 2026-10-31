@@ -5,6 +5,7 @@ import JobTable from './components/JobTable'
 import JobModal from './components/JobModal'
 import Dashboard from './components/Dashboard'
 import KanbanBoard from './components/KanbanBoard'
+import PipelineChart from './components/PipelineChart'
 import './App.css'
 
 export default function App() {
@@ -55,6 +56,7 @@ export default function App() {
       {error && <div className="error-banner">{error}</div>}
 
       <Dashboard jobs={jobs} />
+      <PipelineChart jobs={jobs} />
 
       {loading ? (
         <p className="loading">Loading…</p>

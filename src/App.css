@@ -271,3 +271,12 @@ body {
 .kanban-card-role { font-size: 0.8rem; color: #94a3b8; margin-bottom: 4px; }
 .kanban-card-date { font-size: 0.7rem; color: #64748b; }
 .kanban-empty { color: #334155; text-align: center; padding: 1.5rem 0; font-size: 0.8rem; }
+
+/* Pipeline chart */
+.pipeline-chart {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.chart-title { font-size: 0.95rem; font-weight: 600; color: #94a3b8; margin-bottom: 1rem; }
